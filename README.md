@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# 🎓 Yakut Akademi — Learning Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> "Start Learning from Scratch" — An online learning and teaching platform where you can improve your skills with 100+ courses.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🖥️ About the Project
 
-### `npm start`
+Yakut Akademi is a modern LMS (Learning Management System) platform where students and instructors come together. Users can browse courses, purchase them, and access content, while instructors can create and manage their own courses.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+- 🏠 **Home Page** — Platform introduction, popular courses, and student testimonials
+- 📚 **Course Listing** — Category-based filterable course catalog (Web Development, Mobile Development, Accounting, Video Editing, Databases, Graphic Design...)
+- 🔍 **Course Detail Page** — Course content, sections, preview video, and purchase
+- 🛒 **Checkout System** — Secure course purchase with credit card (30-day money-back guarantee)
+- 👤 **User Management** — Sign up, log in, and edit profile
+- 📖 **My Learning** — Track purchased courses
+- 🌙 **Dark Mode** — Theme toggle support
+- 📱 **Responsive Design** — Mobile and desktop friendly interface
+- ⚡ **Skeleton Loading** — Smooth loading animations for better user experience
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Technology | Description |
+|-----------|----------|
+| ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) | Component-based UI library |
+| ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=react-router&logoColor=white) | Client-side routing (SPA) |
+| ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white) | Responsive styling framework |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) | Core programming language |
+| ![Context API](https://img.shields.io/badge/Context_API-61DAFB?style=flat&logo=react&logoColor=black) | Global state management |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Project Structure
 
-### `npm run eject`
+```
+E-learning-main/
+├── public/
+│   ├── images/          # Course images
+│   ├── videos/          # Course preview videos
+│   └── index.html
+├── src/
+│   ├── Assets/          # Icons and app visuals
+│   ├── component/       # Reusable UI components
+│   │   ├── Header/
+│   │   ├── Hero/
+│   │   ├── PopularCourses/
+│   │   ├── StudentsSay/
+│   │   ├── BecomeTeacher/
+│   │   └── ...
+│   ├── container/       # Page-level components
+│   │   ├── Home/
+│   │   ├── Courses/
+│   │   ├── Course/      # Course detail page
+│   │   ├── Learn/
+│   │   ├── CheckOut/
+│   │   ├── Profile/
+│   │   ├── About/
+│   │   └── Contact/
+│   ├── Context/         # Global state providers
+│   │   ├── AuthenticationContextProvider.jsx
+│   │   ├── CategoriesContextProvider.jsx
+│   │   └── CourseContextProvider.jsx
+│   ├── Skeleton/        # Loading skeleton components
+│   ├── useFetch.js      # Custom hook for API calls
+│   └── index.js
+├── tailwind.config.js
+└── package.json
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+```bash
+# Clone the repository
+git clone https://github.com/oznuryakut/e-learning-system.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Navigate to the project folder
+cd e-learning-system
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Install dependencies
+npm install
 
-### Code Splitting
+# Start the development server
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The app will open at [http://localhost:3000](http://localhost:3000).
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📜 Available Scripts
 
-### Making a Progressive Web App
+| Command | Description |
+|---------|-------------|
+| `npm start` | Runs the app in development mode |
+| `npm run build` | Builds the app for production |
+| `npm test` | Launches the test runner |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🗄️ Data Source
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The app fetches data from an external JSON repository via the `useFetch` custom hook:
 
-### Deployment
+- `courses.json` — Course list and details
+- `categories.json` — Course categories
+- `students.json` — Student testimonials
+- `info.json` — Platform stats (150k+ learners, 200+ instructors, 800+ courses)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 👩‍💻 Developer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Öznur Yakut**  
+[![GitHub](https://img.shields.io/badge/GitHub-oznuryakut-181717?style=flat&logo=github)](https://github.com/oznuryakut)
+
+---
+
+> This project was developed as part of the **Distance Learning Management System** course. © 2025 Yakut Akademi

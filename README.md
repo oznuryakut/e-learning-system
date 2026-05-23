@@ -1,7 +1,5 @@
 # 🎓 Yakut Akademi — Learning Management System
 
-> "Start Learning from Scratch" — An online learning and teaching platform where you can improve your skills with 100+ courses.
-
 ---
 
 ## 🖥️ About the Project
